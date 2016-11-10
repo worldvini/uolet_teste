@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Vinicius da Silva Fleury - worlvini@hotmail.com - https://github.com/worldvini">
 	<meta name="description" content="Teste de Estágio front-end para a empresa UOLET, situada na Av: Brigadeiro Faria Lima 558 - 7º Andar ap 72">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<title>UOLET</title>
 </head>
@@ -19,7 +20,7 @@
 					<div class="form-group nome">
 						<label for="nome" class="control-label col-xs-3 col-sm-2">Nome: </label>
 						<div class="col-xs-9 col-sm-10">
-							<input id="nome" class="form-control" type="text" placeholder="ex: joão jose da silva" pattern="[a-zA-Z\s]+$" title="Campo NOME não pode possuir NUMERO" required>
+							<input id="nome" class="form-control" type="text" placeholder="ex: joão jose da silva" pattern="[a-zA-Z\s\~\´\`]+$" title="Campo NOME não pode possuir NUMERO" required>
 						</div>			
 					</div>
 					<div class="form-group telefone">
@@ -49,7 +50,6 @@
 	<footer class="container">
 			<p>Validação de formulário feito em Selenium-IDE - <a href="https://github.com/worldvini/uolet_teste">Documentação em GitHub - uolet_teste</a></p>		
 	</footer>
-
 	<!-- script -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/form.js"></script>
