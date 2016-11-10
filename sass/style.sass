@@ -1,0 +1,52 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+
+$white: #fff
+$black: #000
+$purple: #320060
+$error: #ff0015
+$ok: #00ff4c
+
+*
+	margin: 0px
+	border: 0px
+	padding: 0px
+.container
+	max-width: 800px	
+body
+	background-color: $black
+	font-family: 'Open Sans', sans-serif
+	margin-top: 20px
+header,
+footer
+	background-color: $purple
+	text-align: center
+	color: $white
+	p 
+		padding: 15px 0px
+header 
+	border-radius: 15px 15px 0px 0px	
+footer
+	border-radius: 0px 0px 15px 15px		
+form 
+	background-color: $white
+	padding: 40px
+	text-align: center	
+	button
+		padding-top: 20px	
+.form-group
+	padding: 10px 0px
+	border-radius: 10px	
+	label 
+		color: $black
+	input:valid + input:after
+		content: 'X'
+	input:invalid + input:after
+		content: 'V'		
+	
+.ok 
+	background-color: rgba($ok, 0.6)
+.error	
+	background-color: rgba($error, 0.6)			
+
+	

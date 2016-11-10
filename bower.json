@@ -1,0 +1,21 @@
+{
+  "name": "uolet_teste",
+  "homepage": "https://github.com/worldvini/uolet_teste",
+  "authors": [
+    "Vinicius da Silva Fleury <worldvini@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
