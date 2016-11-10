@@ -4,7 +4,7 @@
 $white: #fff
 $black: #000
 $purple: #320060
-$error: #ff0015
+$error: #ddf718 //#ff0015
 $ok: #00ff4c
 
 *
@@ -39,14 +39,21 @@ form
 	border-radius: 10px	
 	label 
 		color: $black
-	input:valid + input:after
-		content: 'X'
-	input:invalid + input:after
-		content: 'V'		
-	
+	textarea
+		&:valid
+			background-color: rgba($ok, 0.4)
+
 .ok 
-	background-color: rgba($ok, 0.6)
+	background-color: rgba($ok, 0.4)
 .error	
-	background-color: rgba($error, 0.6)			
+	background-color: rgba($error, 0.4)
+
+@media screen and (max-width: 481px)
+	form 
+		padding: 15px
+	.form-group
+		padding-top: 0px	
+
+		
 
 	
