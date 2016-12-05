@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.agenciavortex.com.br/" />
+<title>teste_agenciavortex_index</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">teste_agenciavortex_index</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--verificar o nome do site se está correto-->
+<tr>
+	<td>verifyTitle</td>
+	<td>Vortex - Agência Digital</td>
+	<td></td>
+</tr>
+<!--se o menu existe-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=theMenu</td>
+	<td></td>
+</tr>
+<!--se quando clicar no menu ele vai abrir-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-bars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=menuToggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=nav.menu-open</td>
+	<td></td>
+</tr>
+<!--verificar se o H1 carregou e esta correto-->
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.logo</td>
+	<td>VORTEX</td>
+</tr>
+<!--verificando se os links do menu existem e estão com o texto certo-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Home</td>
+	<td>Home</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=O que Fazemos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=O que Fazemos</td>
+	<td>O que Fazemos</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Blog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Blog</td>
+	<td>Blog</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Quem Somos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Quem Somos</td>
+	<td>Quem Somos</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Contato</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Contato</td>
+	<td>Contato</td>
+</tr>
+<!--link com imagem certa e link para o url certa-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='theMenu']/div/a[@href='http://www.facebook.com/agenciadigitalvortex/']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-google-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='theMenu']/div/a[@href='http://plus.google.com/u/0/112410228295840657604']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-instagram</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='theMenu']/div/a[@href='http://www.instagram.com/vortexagenciadigital']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-envelope</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='theMenu']/div/a[@href='contato.php']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=menuToggle</td>
+	<td></td>
+</tr>
+<!--Verificando o cabeçalho-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='container2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='stars']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='twinkling']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='clouds']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='row']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='logovortex']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='introtxt']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='spacer']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-angle-down</td>
+	<td></td>
+</tr>
+<!--verificando o nome do site -->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-lg-8 &gt; h1</td>
+	<td>Bem-vindo a Agência Vortex</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p</td>
+	<td>Trabalhamos para atrair seus clientes, disponibilizando conteúdos sobre assuntos que fazem parte da área de atuação da sua empresa e que sejam do interesse do seu público.</td>
+</tr>
+<!--verificar se os 9 cartões existem-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=card-9</td>
+	<td></td>
+</tr>
+<!--verificar as informações dentro de cada cartão-->
+<!--frente do cartão 1-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[2]/div/img[@src='assets/img/cards/media.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[2]/div/h2</td>
+	<td>Gestão de Mídias Sociais</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[2]/div[2]</td>
+	<td>Relação Cliente-Marca</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 1-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[1]/div[2]</td>
+	<td>Seja lembrado!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-1']/div[1]/div[3]/div</td>
+	<td>Gestão de Mídias Sociais</td>
+</tr>
+<!--frente do cartão 2-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[2]/div/img[@src='assets/img/cards/wcomm.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[2]/div/h2</td>
+	<td>WebCommerce</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[2]/div[2]</td>
+	<td>Loja Virtual</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 2-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[1]/div[2]</td>
+	<td>Sua loja aberta 24 horas!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-2']/div[1]/div[3]/div</td>
+	<td>WebCommerce</td>
+</tr>
+<!--frente do cartão 3-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[2]/div/img[@src='assets/img/cards/blog.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[2]/div/h2</td>
+	<td>Desenvolvimento Web</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[2]/div[2]</td>
+	<td>Entre no mundo digital!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 3-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[1]/div[2]</td>
+	<td>Digitalize seu negócio!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-3']/div[1]/div[3]/div</td>
+	<td>Desenvolvimento Web</td>
+</tr>
+<!--frente do cartão 4-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[2]/div/img[@src='assets/img/cards/seo.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[2]/div/h2</td>
+	<td>Seo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[2]/div[2]</td>
+	<td>Search Engine Optimization</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 4-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[1]/div[2]</td>
+	<td>Apareça no Google!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-4']/div[1]/div[3]/div</td>
+	<td>SEO</td>
+</tr>
+<!--frente do cartão 5-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[2]/div/img[@src='assets/img/cards/erp.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[2]/div/h2</td>
+	<td>Erp</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[2]/div[2]</td>
+	<td>Enterprise Resouce Planning</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 5-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[1]/div[2]</td>
+	<td>Gerencie de Qualquer Lugar!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-5']/div[1]/div[3]/div</td>
+	<td>ERP</td>
+</tr>
+<!--frente do cartão 6-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[2]/div/img[@src='assets/img/cards/mail.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[2]/div/h2</td>
+	<td>Google Analytics</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[2]/div[2]</td>
+	<td>Analise seus compradores</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 6-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[1]/div[2]</td>
+	<td>Relatórios do seus clientes</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-6']/div[1]/div[3]/div</td>
+	<td>Google Analytics</td>
+</tr>
+<!--frente do cartão 7-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[2]/div/img[@src='assets/img/cards/google.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[2]/div/h2</td>
+	<td>Google AdWord</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[2]/div[2]</td>
+	<td>Google Analytics</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 7-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[1]/div[2]</td>
+	<td>Resultados mensuráveis</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-7']/div[1]/div[3]/div</td>
+	<td>Google Adword</td>
+</tr>
+<!--frente do cartão 8-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[2]/div/img[@src='assets/img/cards/15.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[2]/div/h2</td>
+	<td>CMS</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[2]/div[2]</td>
+	<td>Content Management System</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 8-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[1]/div[2]</td>
+	<td>Personalize seu template!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-8']/div[1]/div[3]/div</td>
+	<td>CMS</td>
+</tr>
+<!--frente do cartão 9-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[2]/div/img[@src='assets/img/cards/dev.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[2]/div/h2</td>
+	<td>Desenvolvimento Digital</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[2]/div[2]</td>
+	<td>Apps</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[2]/div[3]/div</td>
+	<td>O que é?</td>
+</tr>
+<!--atras do cartão 9-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[1]/div[1]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[1]/div[2]</td>
+	<td>Facilite o acesso!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='card-9']/div[1]/div[3]/div</td>
+	<td>Desenvolvimento Digital</td>
+</tr>
+<!--Verificar se quando clicar ele esta trocando os cartões-->
+<!--cartão 1-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-1 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 2-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-2 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 3-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-3 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 4-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-4']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-4']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-4 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 5-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-5 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 6-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-6 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 7-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-7']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-7']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-7 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 1-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-8']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-8']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-8 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--cartão 9-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-9']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='card-9']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.back.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipOutX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#card-9 &gt; div.front.demo-card-square.mdl-card.mdl-shadow--2dp.animated.flipInX</td>
+	<td></td>
+</tr>
+<!--section services-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-certificate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[2]/h3</td>
+	<td>CRM</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-question-circle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[4]/h3</td>
+	<td>Suporte</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[4]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-globe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[4]/h3</td>
+	<td>Global Services</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='services']/div/div/div[6]/p</td>
+	<td></td>
+</tr>
+<!--section cadastro e fala conosco-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='call']/div/div/h3</td>
+	<td>Fale Conosco e Cadastre-se!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='call']/div/div/div/p[1]</td>
+	<td>Escolha a melhor forma para o contato</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='call']/div/div/div/p[2]/button</td>
+	<td>Contate-nos</td>
+</tr>
+<!--Verificando as fotos de programação-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Joomla&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='lg']/div/div/div[5]/img[@src='assets/img/javascript.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Html5&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='lg']/div/div/div[2]/img[@src='assets/img/html5.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;PHP&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='lg']/div/div/div[3]/img[@src='assets/img/php-file.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;sql&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='lg']/div/div/div[4]/img[@src='assets/img/sql.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;JavaScript&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='lg']/div/div/div[1]/img[@src='assets/img/joomla.png']</td>
+	<td></td>
+</tr>
+<!--Redes Sociais-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-lg-12 &gt; h1</td>
+	<td>Fique Conectado</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-lg-12 &gt; p</td>
+	<td>Esteja por dentro das últimas tecnologias e produtos da Vortex Agência</td>
+</tr>
+<!--facebook-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/h4</td>
+	<td>Facebook</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.centered &gt; a &gt; i.fa.fa-facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[1]/a[@href='http://www.facebook.com/agenciadigitalvortex/']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[2]</td>
+	<td>&gt; Become A Friendx</td>
+</tr>
+<!--instagram-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/h4</td>
+	<td>INSTAGRAM</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.centered &gt; a &gt; i.fa.fa-instagram</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[1]/a[@href='http://www.instagram.com/vortexagenciadigital']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[2]</td>
+	<td>&gt;Follow Us</td>
+</tr>
+<!--google-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/h4</td>
+	<td>Google +</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.centered &gt; a &gt; i.fa.fa-google-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[1]/a[@href='http://plus.google.com/u/0/112410228295840657604']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sf']/div/div/div/p[2]</td>
+	<td>&gt; Ass Us To Your Circle</td>
+</tr>
+<!--rodape-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='mapwrap']/script</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#cf &gt; div.container &gt; div.row &gt; div.col-lg-4 &gt; h4</td>
+	<td>Endereço &lt;br&gt;&nbsp;&nbsp;Estreito - Florianópolis</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#cf &gt; div.container &gt; div.row &gt; div.col-lg-4 &gt; p</td>
+	<td>Rua Doutor heitor Blum 310, &lt;br&gt; Sala 512.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.glyphicon.glyphicon-earphone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='cf']/div/div/div[2]/p[2]</td>
+	<td>+55 (48) 3307-1916 &lt;br&gt; W: +55 (48) 8477-0421</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.fa.fa-envelope</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Comercial@agenciavortex.com.br</td>
+	<td>Comercial@agenciavortex.com.br</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='cf']/div/div/div[2]/p[3]</td>
+	<td>Vortex Agência Digital</td>
+</tr>
+</tbody></table>
+</body>
+</html>

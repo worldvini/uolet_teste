@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://vortexagencia.com.br/" />
+<title>Vortex - O que é CMS</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Vortex - O que é CMS</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/blog/?p=15</td>
+	<td></td>
+</tr>
+<!--se o titulo do site carregou e esta correto-->
+<tr>
+	<td>verifyTitle</td>
+	<td>exact:O que é CMS? (content managent system) – Vortex Blog</td>
+	<td></td>
+</tr>
+<!--se a imagem correta do logo carregou, com link correto-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.custom-logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//img[@src='http://vortexagencia.com.br/blog/wp-content/uploads/2016/11/cropped-VortexEscritaHorizontal-Preto@3x-8.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//header/div/div/a[@href='http://vortexagencia.com.br/blog/']</td>
+	<td></td>
+</tr>
+<!--Se o texto abaixo do logo carregou e esta com o link e texto correto-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.custom-logo-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//header/div/div/p/a[@href='http://vortexagencia.com.br/blog/']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//header/div/div/p/a</td>
+	<td>Vortex Blog</td>
+</tr>
+<!--Se a descrição carregou e esta com o texto correto-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=p.site-description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.site-description</td>
+	<td>Últimas Notícias e Artigos</td>
+</tr>
+<!--Se o artigo carregou e esta com o texto correto-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h1.entry-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.entry-title</td>
+	<td>exact:O que é CMS? (content managent system)</td>
+</tr>
+<!--Se a imagem do artigo carregou  e esta com a imagem correta-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[@alt='cms']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//img[@src='http://vortexagencia.com.br/blog/wp-content/uploads/2016/11/cms-concept1-e1480480589792.jpg']</td>
+	<td></td>
+</tr>
+<!--Se o artigo possui algum texto ou paragrafo-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.entry-content &gt; p</td>
+	<td></td>
+</tr>
+<!--Se o artigo possui foto do autor, nome, data e categoria-->
+<tr>
+	<td>verifyText</td>
+	<td>//img[contains(@src,'http://2.gravatar.com/avatar/56625050e25a2751ea2c3afa927ad2f8?s=49&amp;d=mm&amp;r=g')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.tags-links</td>
+	<td></td>
+</tr>
+<!--Se o formulario possui titulo e se está correto-->
+<tr>
+	<td>verifyText</td>
+	<td>id=reply-title</td>
+	<td>Deixe uma resposta</td>
+</tr>
+<!--Se o formulario existe e a descricao esta correta e suas label-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=commentform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=email-notes</td>
+	<td>O seu endereço de e-mail não será publicado.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.comment-form-comment &gt; label</td>
+	<td>Comentário</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.comment-form-author &gt; label</td>
+	<td>Nome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.comment-form-email &gt; label</td>
+	<td>E-mail</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=p.comment-form-url &gt; label</td>
+	<td>Site</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=comment_post_ID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=comment_parent</td>
+	<td></td>
+</tr>
+<!--tentando enviar comentario com os campos vazios-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<!--verificando mensagem e campo pagina de erro-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=error-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//body[@id='error-page']/p[2]</td>
+	<td>exact:ERRO: preencha os campos obrigatórios (nome, e-mail).</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=« Voltar</td>
+	<td></td>
+</tr>
+<!--enviar so com comentario-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>oi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<!--verificando mensagem e campo pagina de erro-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=error-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//body[@id='error-page']/p[2]</td>
+	<td>exact:ERRO: preencha os campos obrigatórios (nome, e-mail).</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=« Voltar</td>
+	<td></td>
+</tr>
+<!--enviar so com comentario e nome-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>oi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td>Vinicius</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<!--verificando mensagem e campo pagina de erro-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=error-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//body[@id='error-page']/p[2]</td>
+	<td>exact:ERRO: preencha os campos obrigatórios (nome, e-mail).</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=« Voltar</td>
+	<td></td>
+</tr>
+<!--enviar com campos preeenchido mais email invalido-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>oi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td>Vinicius</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>testesabesela</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<!--verificando mensagem e campo pagina de erro-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=error-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//body[@id='error-page']/p[2]</td>
+	<td>exact:ERRO: digite um endereço de e-mail válido.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=« Voltar</td>
+	<td></td>
+</tr>
+<!--enviar com email valido,campos preenchido mas nome em branco-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>oi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>testeautomacao@teste.com.br</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>qualquer</td>
+</tr>
+<!--verificando mensagem e campo pagina de erro-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=error-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//body[@id='error-page']/p[2]</td>
+	<td>exact:ERRO: preencha os campos obrigatórios (nome, e-mail).</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=« Voltar</td>
+	<td></td>
+</tr>
+<!--enviar com tudo corretamente-->
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>oi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=author</td>
+	<td>Vinicius</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>testeautomacao@teste.com.br</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>Não é obrigatório</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<!--mensagem de envio correto aguardando liberacao moderador-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=p.comment-awaiting-moderation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.comment-awaiting-moderation</td>
+	<td>O seu comentário está aguardando moderação.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
