@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://console.uolet.com/" />
+<title>teste_uolet_console_login_tentativa_de_conectar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">teste_uolet_console_login_tentativa_de_conectar</td></tr>
+</thead><tbody>
+<!--testes de mensagens e tentativas de acesso-->
+<!--Todos os campos vazios-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Informe suas credenciais completas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--Preenchido somente nome-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>uolet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Informe suas credenciais completas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--nome e senha mas sem sigla-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>uolet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Informe suas credenciais completas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--o botao de erro fecha?-->
+<tr>
+	<td>click</td>
+	<td>id=btn-dismiss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=login-error</td>
+	<td></td>
+</tr>
+<!--Somente senha-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Informe suas credenciais completas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--o botao de erro fecha?-->
+<tr>
+	<td>click</td>
+	<td>id=btn-dismiss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=login-error</td>
+	<td></td>
+</tr>
+<!--somente senha e sigla-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td>uol</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Informe suas credenciais completas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--o botao de erro fecha?-->
+<tr>
+	<td>click</td>
+	<td>id=btn-dismiss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=login-error</td>
+	<td></td>
+</tr>
+<!--Todos os campos preenchidos-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>uolet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=merchant</td>
+	<td>uol</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=button.disabled</td>
+	<td></td>
+</tr>
+<!--div mensagem de erro-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=login-error</td>
+	<td>exact: Credenciais inválidas.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-dismiss</td>
+	<td>x</td>
+</tr>
+<!--o botao de erro fecha?-->
+<tr>
+	<td>click</td>
+	<td>id=btn-dismiss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=login-error</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
