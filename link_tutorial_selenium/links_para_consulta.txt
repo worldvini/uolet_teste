@@ -1,0 +1,11 @@
+Links para algumas paginas e tutoriais sobre selenium validacao na IDE do Firefox e em Js.
+
+Ide:
+
+http://www.qualister.com.br/blog/automacao-de-testes---parte-i---introducao
+http://www.qualister.com.br/blog/automacao-de-testes---parte-ii---selenium-ide---principais-dificuldades
+http://www.qualister.com.br/blog/selenium-webdriver---parte-1
+
+Xpath:
+
+http://www.qualister.com.br/blog/identificando-elementos-com-xpath
