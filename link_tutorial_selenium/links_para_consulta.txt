@@ -4,8 +4,10 @@ Ide:
 
 http://www.qualister.com.br/blog/automacao-de-testes---parte-i---introducao
 http://www.qualister.com.br/blog/automacao-de-testes---parte-ii---selenium-ide---principais-dificuldades
-http://www.qualister.com.br/blog/selenium-webdriver---parte-1
+http://www.qualister.com.br/blog/-automacao-de-testes---parte-iii---selenium-ide---user-extensions
 
 Xpath:
 
 http://www.qualister.com.br/blog/identificando-elementos-com-xpath
+
+http://www.qualister.com.br/blog/selenium-webdriver---parte-1
