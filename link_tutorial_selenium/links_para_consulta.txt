@@ -9,5 +9,8 @@ http://www.qualister.com.br/blog/-automacao-de-testes---parte-iii---selenium-ide
 Xpath:
 
 http://www.qualister.com.br/blog/identificando-elementos-com-xpath
-
 http://www.qualister.com.br/blog/selenium-webdriver---parte-1
+
+Selenium Remote Control
+
+http://www.qualister.com.br/blog/o-que-e-o-selenium-remote-control
