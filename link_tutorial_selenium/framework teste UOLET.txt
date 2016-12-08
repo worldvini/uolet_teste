@@ -1,0 +1,10 @@
+Testes automatizados, linha de raciocinio para estudo UOLET
+
+Framework
+	JUnit
+		https://www.youtube.com/watch?v=zylSll8hsPs
+	TestNG
+
+Framework
+	Appium
+		http://www.qualister.com.br/blog/automacao-de-testes-mobile-com-appium---parte-1
