@@ -1,0 +1,9 @@
+package com.primeiro.teste;
+
+import org.testng.annotations.Test;
+
+public class PrimeiroContato {
+  @Test
+  public void f() {
+  }
+}

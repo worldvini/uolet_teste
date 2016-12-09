@@ -3,14 +3,18 @@ Testes automatizados, linha de raciocinio para estudo UOLET
 Java
 	Automação
 		https://www.youtube.com/watch?v=YPTlx9vbikM
+		
 	Selenium Web Driver
 		https://www.youtube.com/watch?v=gC5y5SnMydc
+		http://www.devmedia.com.br/trabalhando-com-testes-funcionais-distribuidos-em-java/33456
 
 Framework
 	JUnit
 		https://www.youtube.com/watch?v=zylSll8hsPs
 	TestNG
+		http://www.taketest.com.br/2015/11/26/selenium-webdriver-instalacao/
 		http://www.matera.com/br/2012/11/27/testes-automatizados-utilizando-testng/
+		http://www.taketest.com.br/2015/12/03/selenium-webdriver-primeiro-script-de-testes-no-eclipse/
 
 Framework
 	Appium

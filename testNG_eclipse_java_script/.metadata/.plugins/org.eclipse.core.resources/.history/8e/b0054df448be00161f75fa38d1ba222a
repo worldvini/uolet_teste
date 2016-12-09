@@ -1,0 +1,10 @@
+package com.testes;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+
+public class NewTest {
+  @Test
+  public void f() {
+  }
+}
